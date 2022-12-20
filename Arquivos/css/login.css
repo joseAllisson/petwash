@@ -1,0 +1,34 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*Painel esquerdo que contém a imagem*/
+.painel-imagem{
+    background-image: url('../../Imagens/Background/gato.jpg');
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+}
+
+/*Painel direito que contém o formulário*/
+.painel-login{
+    height: 100vh;
+}
+
+/*Botão do formulário*/
+.btn{
+    font-size: 18px;
+    background-color: rgb(48, 43, 41);
+    color:#ffffff;
+}
+
+.btn:hover{
+    color:#ffffff;
+}
+
+::selection{
+    background-color: #8F7768;
+    color: #ffffff;
+}

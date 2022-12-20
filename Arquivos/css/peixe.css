@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  ::selection{
+    background-color: #8F7768;
+    color: #ffffff;
+  }
+
+    /* efeito passar mouse no dropdrown */
+    .dropdown-item:hover{
+      background-color: #302B29;
+      color: white;
+    }
+  
+  /*Container que abriga a barra de rolagem*/
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /*Barra de rolagem*/
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(39, 39, 38);
+    border-radius: 10px;
+  }
+  
+  /*Container restante da barra de rolagem*/
+  ::-webkit-scrollbar-track {
+    background-color: rgb(158, 158, 158);
+  }
+  
+  
+  /*Imagens de fundo*/
+  .background {
+      height: 50vh;
+      background-image: url("../../Imagens/Background/peixe.jpg");
+      background-size: 30%;
+      background-repeat: no-repeat;
+      background-position: left -30px;
+      background-color: #DADCDC; 
+      background-blend-mode: darken;
+  }
+
+  /* titulo do backgroun */
+  .bg-titulo{
+    font-size: 4em;
+    margin: auto;
+    padding: 10vh;
+    font-weight: 300;
+  }
+
+  /*Navbar que abriga a barra de pesquisa*/
+  .barra-navegacao{
+    line-height: 10vh;
+  }
+  
+  .btn-brown{
+    background-color: rgb(48, 43, 41);
+    color: #ffffff !important;
+  }
+  
+  .btn-outline-brown{
+    background-color: transparent;
+    border-color: rgb(48, 43, 41);
+    color: rgb(48, 43, 41);
+  }
+  
+  .btn-outline-brown:hover{
+    background-color: rgb(48, 43, 41);
+    color: #ffffff;
+  }
+  
+  
+  
+  /*Navbar que abriga as opções do menu*/
+  .menu{
+    background-color: rgb(48, 43, 41);
+  }
+  
+  /*Opções do menu*/
+  .nav-link {
+    font-size: 18px;
+  }
+  
+  .nav-link:hover {
+    color: rgb(201, 201, 201)!important;
+  }
+  
+  /*Ródape*/
+  footer{
+    background-color: rgb(32, 31, 31);
+  }
+  
+  /*redes sociais*/
+  .fab{
+    font-size: 20px;
+    color:#ffffffab;
+    transition: all .3s;
+  }
+  
+  /*redes sociais*/
+  .fab:hover{
+    color:#ffffff;
+  }
+  
+  section.py-5{
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  
+  }
+
+  /* titulo com icone */
+  
+  .titulo{
+      margin: 30px 0px;
+      text-align: center;
+      color: #B67D2D;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /* imagens , produtos */
+  
+  .img-fluid{
+      min-width: 100px;
+      cursor: pointer;
+  }
+
+  /* link */
+  
+  a {
+      color: #111;      
+  }
+ 
+  a:hover{
+    color: rgb(87, 86, 86);      
+   }
+
+   /* fundo ajustavel */
+  
+
+  @media(max-width:1024px){
+     /* ajustar filtro */
+     .list {
+      flex: none!important;
+      max-width: 100%;
+    }
+
+    .bg-titulo{
+      display: none;
+      
+    }
+    .background {
+      height: 50vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position:0px -120px;
+      background-blend-mode: darken;
+     
+  }}
+  

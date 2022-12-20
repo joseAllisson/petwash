@@ -1,0 +1,58 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+/*Cor do seletor da página*/
+::selection{
+    background-color:#20B2AA;
+}
+
+/*Plano de fundo*/
+header.row{
+    background: url('../../Imagens/Background/gato.jpg') center no-repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    background-size:cover;
+    height: 100vh;
+}
+
+/*Elemento que abriga o formulário*/
+.painel-cadastro{
+    background-color: #ffffff;
+    width:30rem;
+}
+
+/*Inputs do formulário*/
+.form-control{
+    border:none !important;
+    border-bottom: 1px solid rgb(48, 43, 41) !important;
+    border-radius: 0;
+}
+
+/*Botão do formulário*/
+.btn{
+    font-size: 18px;
+    background-color: rgb(48, 43, 41);
+    color:#ffffff;
+}
+
+.btn:hover{
+    color:#ffffff;
+}
+
+::selection{
+    background-color: #8F7768;
+    color: #ffffff;
+}
+
+.btn:hover{
+    color: #ffffff!important;
+}
+
+@media(max-width:552px){
+    header.row{
+        background: #ffffff;
+    }
+}

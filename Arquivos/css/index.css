@@ -1,0 +1,180 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* efeito passar mouse no dropdrown */
+.dropdown-item:hover{
+  background-color: #302B29;
+  color: white;
+}
+
+  /* link */
+  
+  a {
+    color: #111;      
+}
+
+a:hover{
+  color: rgb(87, 86, 86);      
+ }
+
+::selection{
+  background-color: #8F7768;
+  color: #ffffff;
+}
+
+/*Container que abriga a barra de rolagem*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/*Barra de rolagem*/
+::-webkit-scrollbar-thumb {
+  background-color: rgb(39, 39, 38);
+  border-radius: 10px;
+}
+
+/*Container restante da barra de rolagem*/
+::-webkit-scrollbar-track {
+  background-color: rgb(158, 158, 158);
+}
+
+
+/*Imagens do carrousel*/
+.carousel-item {
+    height: 100vh;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.4); 
+    background-blend-mode: darken;
+}
+
+/*Indicadores de alternação de imagens no carrousel*/
+.indicadores{
+  border-radius: 50%;
+  height:12px !important; 
+  width:12px !important
+}
+
+/*Navbar que abriga a barra de pesquisa*/
+.barra-navegacao{
+  line-height: 10vh;
+}
+
+.btn-brown{
+  background-color: rgb(48, 43, 41);
+  color: #ffffff !important;
+}
+
+.btn-outline-brown{
+  background-color: transparent;
+  border-color: rgb(48, 43, 41);
+  color: rgb(48, 43, 41);
+}
+
+.btn-outline-brown:hover{
+  background-color: rgb(48, 43, 41);
+  color: #ffffff;
+}
+
+
+
+/*Navbar que abriga as opções do menu*/
+.menu{
+  background-color: rgb(48, 43, 41);
+}
+
+/*Opções do menu*/
+.nav-link {
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: rgb(201, 201, 201)!important;
+}
+
+
+/*Ródape*/
+footer{
+  background-color: rgb(32, 31, 31);
+}
+
+/*redes sociais*/
+.fab{
+  font-size: 20px;
+  color:#ffffffab;
+  transition: all .3s;
+}
+
+/*redes sociais*/
+.fab:hover{
+  color:#ffffff;
+}
+
+.icone{
+  float: left;
+  max-width:50px;
+  transition: 0.4s;
+}
+
+.icone:hover{
+    transform: scale(1.3, 1.3)
+}
+
+section.py-5{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.titulo{
+    margin: 30px 0px;
+    text-align: center;
+    color: #B67D2D;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.img-fluid{
+    min-width: 100px;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+
+@media(max-width:768px)
+{
+  .secao-rodape{
+    margin: 30px 0px 4px 0;
+  }
+
+  section.py-5{
+    padding: 5% 10%;
+    margin-bottom: 10px;
+    text-align: center
+}
+
+.carousel-item{
+  width: 100%!important;
+  height: 50vh!important;
+}
+/* tamanhos textos */
+.carousel-item .text-white p{
+  font-size: 1em!important;
+  
+}
+
+.carousel-item .text-white h2{
+  font-size: 2em!important;
+  
+}
+
+.text-white{
+  margin-left: 1rem!important;
+}
+
+}
+

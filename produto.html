@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pet Wash</title>
+    <meta charset="utf-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <meta name="keywords" content="Pet Shop, Cachorros, Gatos, Pet Wash" />
+    <meta name="description" content="O melhor Pet shop do brasil, amor e respeito com o seu Pet!" />
+    <meta name="author" content="Guilherme Avelino, José Alisson" />
+
+    <link rel="stylesheet" href="Bibliotecas/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Bibliotecas/fontawesome-free-5.11.2-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="Bibliotecas/fontawesome-free-5.11.2-web/css/brands.min.css">
+    <link rel="stylesheet" href="Bibliotecas/fontawesome-free-5.11.2-web/css/solid.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="Arquivos/css/produto.css" />
+</head>
+
+<body onresize="zoom()" onload="zoom()">
+
+
+    <nav class="navbar justify-content-between barra-navegacao bg-white m-auto">
+
+        <a href="index.html">
+            <img class="navbar-brand" src="Imagens/petwash.png" height="110" width="230">
+        </a>
+
+        <div class="input-group w-50 d-md-flex d-none">
+            <input type="text" class="form-control" placeholder="Pesquisar" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-brown" type="button">Pesquisar</button>
+            </div>
+        </div>
+
+        <a class="btn btn-outline-brown" href="login.html">
+            <i class="fas fa-user mr-2"></i>Entre ou cadastre-se</a>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark menu m-auto">
+        <button class="navbar-toggler ml-auto border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item dropdown pr-3 pl-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Cachorros
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="cachorro.html">Produtos</a>
+                        <a class="dropdown-item" href="login.html">Banho e tosa</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown pr-3 pl-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Gatos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="gato.html">Produtos</a>
+                        <a class="dropdown-item" href="login.html">Banho</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown pr-3 pl-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Passáros
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="passaro.html">Produtos</a>
+                        <a class="dropdown-item" href="login.html">Limpeza</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown pr-3 pl-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Peixes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="peixe.html">Produtos</a>
+                        <a class="dropdown-item" href="login.html">Manutenção e limpeza</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown pr-3 pl-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Répteis
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="repteis.html">Produtos</a>
+                        <a class="dropdown-item" href="login.html">Limpeza</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown pr-3 pl-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Roedores
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="roedores.html">Produtos</a>
+                        <a class="dropdown-item" href="login.html">Limpeza</a>
+                    </div>
+                </li>
+
+                <li class="nav-item pr-3 pl-3">
+                    <a class="nav-link text-white" href="carrinho.html" id="" data-toggle="" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cart-plus" style="font-size: 30px;float: right;"></i>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Page Content -->
+    <section class="compra-produto">
+        <div class="container-fluid">
+            <!-- produto -->
+            <div class="row">
+
+
+                <div class="col-md-9 row">
+                    <!-- img do produto -->
+                    <div class="col-md-4 d-flex align-content-center justify-content-center py-5 responsivo">
+                        <!-- para efeito funcionar, é preciso 2 tamanho de imagens diferente, 1° menor, 2° maior -->
+                        <img id="zoom_01" src='Imagens/Gatos/alimentoP (2).png' data-zoom-image="Imagens/Gatos/alimento (2).jpg" alt="" class="img-fluid">
+                    </div>
+                    <!-- texto sobre produto -->
+                    <div class="col-md py-4">
+
+                        <!-- nome do prodto -->
+                        <h2 style="font-weight: 400">Produto exemplo</h2>
+                        <!-- classifição de estrelas -->
+                        <div class="estrelas">
+                            <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                            <label for="cm_star-1">
+                                <i class="fa"></i>
+                            </label>
+                            <input type="radio" id="cm_star-1" name="fb" value="1" />
+                            <label for="cm_star-2">
+                                <i class="fa"></i>
+                            </label>
+                            <input type="radio" id="cm_star-2" name="fb" value="2" />
+                            <label for="cm_star-3">
+                                <i class="fa"></i>
+                            </label>
+                            <input type="radio" id="cm_star-3" name="fb" value="3" />
+                            <label for="cm_star-4">
+                                <i class="fa"></i>
+                            </label>
+                            <input type="radio" id="cm_star-4" name="fb" value="4" />
+                            <label for="cm_star-5">
+                                <i class="fa"></i>
+                            </label>
+                            <input type="radio" id="cm_star-5" name="fb" value="5" />
+                        </div>
+
+                        <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor exercitationem excepturi reprehenderit
+                            quod quisquam animi neque ad, iusto dolorum inventore debitis consequatur? Accusamus et in, facilis
+                            quas nobis neque corporis.</p>
+
+                        <ul class="list-desc">
+                            <li>Ração de gato</li>
+                            <li>Pelo saudável</li>
+                        </ul>
+
+
+                    </div>
+
+                    <!-- mais produtos,relacionados,detalhes -->
+                    <div class="container-fluid">
+                        <hr class="some">
+
+                        <h2 class="some">Relacionados</h2>
+
+                        <div class="row py-3 some">
+
+
+                            <div class="col text-center">
+                                <a href="">
+                                    <img src="Imagens/Gatos/alimento (1).jpg" alt="" style="max-width: 50%;">
+
+                                    <div class="">
+                                        <p class="text-dark">produto exemplo</p>
+                                        <h5 class="desconto">R$40,50</h5>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col text-center">
+                                <a href="">
+                                    <img src="Imagens/Gatos/alimento (4).jpg" alt="" style="max-width: 50%">
+
+                                    <div class="">
+                                        <p class="text-dark">produto</p>
+                                        <h5 class="desconto">R$40,50</h5>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col text-center">
+                                <a href="">
+                                    <img src="Imagens/Gatos/alimento (3).jpg" alt="" style="max-width: 50%;">
+
+                                    <div class="">
+                                        <p class="text-dark">produto</p>
+                                        <h5 class="desconto">R$40,50</h5>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col text-center">
+                                <a href="">
+                                    <img src="Imagens/Gatos/acessorio4.jpg" alt="" style="max-width: 50%;">
+
+                                    <div class="">
+                                        <p class="text-dark">produto</p>
+                                        <h5 class="desconto">R$40,50</h5>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <hr>
+                        <!-- detalhes do produto -->
+
+                        <div class="detalhes-p py-2">
+                            <h3 class="">Detalhes</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In possimus fugit necessitatibus beatae,
+                                eaque dolore nemo, tempora nulla corporis illo provident natus velit. Quibusdam beatae blanditiis
+                                quas at porro earum.</p>
+                        </div>
+
+                        <hr>
+                        <!-- sobre o produto -->
+                        <div class="sobre-p">
+
+                            <h3 class="py-1 title-box">Sobre o Produto</h3>
+
+                            <!-- tabela de especificações -->
+
+                            <div class="container-fluid">
+                                <div class="col">
+                                    <!-- colunas dupla -->
+                                    <div class="row border-top border-bottom py-1">
+                                        <div class="col-md text-bold">Indicação</div>
+
+                                        <div class="col">Gatos</div>
+                                    </div>
+                                    <!-- colunas dupla -->
+                                    <div class="row border-bottom py-1">
+                                        <div class="col-md text-bold">Idade</div>
+
+                                        <div class="col">Adultos</div>
+                                    </div>
+                                    <!-- colunas dupla -->
+                                    <div class="row border-bottom py-1">
+                                        <div class="col-md text-bold">Linha</div>
+
+                                        <div class="col">Temptations</div>
+                                    </div>
+                                    <!-- colunas dupla -->
+                                    <div class="row border-bottom py-1">
+                                        <div class="col-md text-bold">Marca</div>
+
+                                        <div class="col">Whiskas</div>
+                                    </div>
+                                    <!-- colunas dupla -->
+                                    <div class="row border-bottom py-1">
+                                        <div class="col-md text-bold">Composição</div>
+
+                                        <div class="col">Milho Integral Moído*, Glúten de Milho*, Farinha de Vísceras de Aves, Quirera de
+                                            Arroz, Sebo Bovino, Farinha de Trigo, Óleo de Frango, Glúten de Trigo, Celulose,
+                                            Polpa de Beterraba, Hidrolisado de Fígado de Frango, Farinha de Carne e Ossos
+                                            de Bovino, Cloreto de Sódio (Sal Comum), B.H.T. (Hidróxido de Tolueno Butilado).
+                                            *Espécies doadoras do gene: Agrobacterium tumefaciens, Bacillus thuringiensis,
+                                            Streptomyces viridochromogenes, Zea mays, Sphingobium herbicidorovans, Dicossoma
+                                            sp., Diabrotica firgifera, Thermoccocales spp, Bacillus substilis.</div>
+                                    </div>
+                                    <!-- colunas dupla -->
+                                    <div class="row border-bottom py-1">
+                                        <div class="col-md text-bold">Niveis de garantia</div>
+
+                                        <div class="col-md"> Umidade (máx) 120 g/kg (12%)
+                                            <br> Proteína Bruta (mín.) 280 g/kg (28%)
+                                            <br> Extrato Etéreo (mín.) 150 g/kg (15%)
+                                            <br> Matéria Fibrosa (máx.) 40 g/kg (4%)
+                                            <br> Matéria Mineral (máx.) 85 g/kg (8,5%)
+                                            <br> Cálcio (mín.) 6.000 mg/kg (0,6%)
+                                            <br> Cálcio (máx.) 12 g/kg (1,2%)
+                                            <br> Fósforo (mín.) 6.000 mg/kg (0,6%)
+                                            <br> Sódio (mín.)</div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <hr>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- detalhes do produto, escolha, preço -->
+                <div class="col-md-3 py-4 escolha">
+
+                    <div class="tamanho-p">
+                        <p>Escolha o tamanho:</p>
+
+                        <button class="btn btn-produto">
+                            40g
+                        </button>
+                        <button class="btn btn-produto">
+                            80g
+                        </button>
+                    </div>
+                    <!-- preço -->
+                    <hr>
+                    <div class="pt-info">
+
+                        <p>Vendido e entreja por petwash</p>
+
+                        <div class="compra">
+                            3x R$50,10
+                            <h2 class="preco">R$150,30</h2>
+                            ou à vista
+                            <h2 class="desconto">R$127,20</h2>
+                        </div>
+
+                        <a href="login.html">
+                            <button class="btn btn-outline-brown w-100 my-2">Adicionar ao carrinho</button>
+                        </a>
+
+                        <a href="#">
+                            <button class="btn btn-success w-100 my-2" data-toggle="modal" data-target="#exampleModal" onclick="preco()" data-whatever="@mdo">Comprar</button>
+                        </a>
+
+
+                    </div>
+
+                    <hr>
+                    <!-- informaçoes de entrega -->
+                    <div class="entrega">
+                        <h4 class="py-1">Compra na Pet Wash</h4>
+
+                        <h5>Entrega</h5>
+                        <p>Entrega Você pode escolher por entrega Econômica ou Expressa. Fique atento ao status do seu pedido!
+                            Para garantir que haverá alguém para recebê-lo.</p>
+
+                        <h5>Formas de pagamento</h5>
+                        <p>
+                            Cartão de Crédito. Boleto Bancário. Débito Automático (débito em conta, débito online) Pagamentos Digitais. Transferência
+                            bancária: Dinheiro. Cheques.
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- modal de comra -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #28a745;color: white">
+                            <h5 class="modal-title" id="exampleModalLabel">Compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- formulario -->
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="email-name" class="col-form-label">Email:</label>
+                                    <input type="text" class="form-control" id="email-name" type="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Numero do Cartão:</label>
+                                    <input class="form-control" id="message-text" type="" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="CPF" class="col-form-label">CPF:</label>
+                                    <input class="form-control" id="CPF" required>
+                                </div>
+                                <div class="form-group row no-gutters">
+                                    <label for="qtd" class="col-form-label">Quantidade</label>
+                                    <input type="number" class="form-control col-2 ml-1 text-center" min="1" max="99" id="qtd" onchange="preco()" value="1" required>
+                                    <p class="preco ml-3">x R$
+                                        <span id="preco">150.30</span>
+                                    </p>
+
+                                </div>
+
+                                <div class="form-group row no-gutters">
+                                    <label for="qtd" class="col-form-label">Preço total: R$</label>
+
+                                    <input type="text" class="form-control col-3" id="total" disabled>
+                                </div>
+
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="submit" class="btn btn-success">Comprar</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer class="row m-auto">
+
+        <section class="col-md-4 d-flex align-items-center justify-content-center secao-rodape">
+            <h1 class="text-light">PET WASH</h1>
+        </section>
+
+        <section class="col-md-4 text-light secao-rodape">
+            <div class="d-flex align-items-start justify-content-center pt-2">
+                <h4>Onde estamos</h4>
+            </div>
+            <div class="mt-3">
+                <div class="d-flex justify-content-center">
+                    <p class="m-1">São Paulo</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p class="m-1">Av. Elísio Teixeira Leite, 3808</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p class="m-1">Pirituba - São Paulo - SP</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="col-md-4 text-light secao-rodape">
+            <div class="d-flex align-items-start justify-content-center pt-2">
+                <h4>Redes sociais</h4>
+            </div>
+            <div class="mt-3 p-3">
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="ml-2 mr-2">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="ml-2 mr-2">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="ml-2 mr-2">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-2">
+                <p>&copy; 2020 Pet Wash todos direitos reservados.</p>
+            </div>
+        </section>
+
+    </footer>
+    <!-- zoom plugin -->
+    <script src="Bibliotecas/Jquery/jquery.js"></script>
+    <script src="Bibliotecas/Bootstrap/js/bootstrap.js"></script>
+    <script src='Bibliotecas/jquery/jquery-1.8.3.min.js'></script>
+    <script src='Bibliotecas/jquery/jquery.elevatezoom.js'></script>
+    <script>
+
+        function zoom() {
+            if (window.innerWidth < 768) {
+                //efeito zoom normal
+                $('#zoom_01').elevateZoom({
+                    zoomType: "inner",
+                    cursor: "crosshair",
+                    zoomWindowFadeIn: 800,  //velocidade de zoom ao paasar mouse
+                    zoomWindowFadeOut: 550 // '' ao sair com mouse
+                });
+            }
+            else {
+                //efeito zoom alterando com mouse,scrol
+                $("#zoom_01").elevateZoom({ scrollZoom: true });
+            }
+        }
+
+        function preco() {
+
+            let preco = document.getElementById('preco').innerHTML * document.getElementById('qtd').value;
+
+            document.getElementById('total').value = preco.toFixed(2);
+        }
+
+
+        //efeito com cor e zomm
+        // $("#zoom_01").elevateZoom({tint:true, tintColour:'black', tintOpacity:0.5}); 
+
+
+
+    </script>
+</body>
+
+</html>
